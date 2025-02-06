@@ -3,10 +3,9 @@
 int main() {
     char x;
     scanf("%c",&x);
-    if(isdigit(x)){
+    if(0){
         printf("Digit");
     }
-
     else if(x=='a'||x=='e'||x=='i'||x=='o'||x=='u'||x=='A'||x=='E'||x=='I'||x=='O'||x=='U'){
         printf("Consonant");
     }
