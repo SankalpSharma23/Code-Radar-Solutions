@@ -6,8 +6,11 @@ int main() {
     if(isupper(x)){
         printf("Uppercase");
     }
+    else if(islower(x)){
+        printf("Lowercase")
+    }
     else{
-        printf("Lowercase");
+        printf("Not an alphabet");
     }
     return 0;
 }
