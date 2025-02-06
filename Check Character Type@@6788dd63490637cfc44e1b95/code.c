@@ -12,7 +12,7 @@ int main() {
     else if(isalpha(x)){
         printf("Consonant");
     }
-    else (x==@){
+    else (x=='@'){
         printf("Special");
     }
     return 0;
