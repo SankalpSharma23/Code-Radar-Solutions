@@ -12,9 +12,11 @@ int main() {
     }
     if else(80>a>=70){
         printf("C");
-    }if else(70>a>=60){
+    }
+    if else(70>a>=60){
         printf("D");
-    } else(a<60){
+    } 
+    else{
         printf("F");
     }
     return 0;
