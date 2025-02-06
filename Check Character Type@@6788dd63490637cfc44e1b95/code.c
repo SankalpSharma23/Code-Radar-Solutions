@@ -13,7 +13,7 @@ int main() {
         printf("Consonant");
     }
     else {
-        printf("Special");
+        printf("Specialn Character");
     }
     return 0;
 }
