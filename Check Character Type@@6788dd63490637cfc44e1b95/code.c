@@ -3,10 +3,13 @@
 int main() {
     char x;
     scanf("%c",&x);
-    switch(x){
-        case 'a': case 'e': case 'i': case'o': case'u': case'A':case 'E': case 'I': case'O': case'U':printf("Vowel");
-        break;
-        default:
+    if(isdigit(x)){
+        printf("Digit");
+    }
+    else if(x==@){
+        printf("Special");
+    }
+    else if(x=='a'||x=='e'||x=='i'||x=='o'||x=='u'||x=='A'||x=='E'||x=='I'||x=='O'||x=='U'||){
         printf("Consonant");
     }
     return 0;
