@@ -3,10 +3,10 @@
 int main() {
     char x;
     scanf("%c",&x);
-    if(x==a,e,i,o,u,A,E,I,O,U){
-        printf("Vowel");
-    }
-    else{
+    switch(x){
+        case 'a': case 'e': case 'i': case'o': case'u': case'A':case 'E': case 'I': case'O': case'U':printf("Vowel");
+        break;
+        default:
         printf("Consonant");
     }
     return 0;
