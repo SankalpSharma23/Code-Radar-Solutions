@@ -11,5 +11,6 @@ int main() {
     else{
         printf("error");
     }
+    printf("%d",result);
     return 0;
 }
