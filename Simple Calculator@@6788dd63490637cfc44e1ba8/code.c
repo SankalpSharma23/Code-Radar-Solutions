@@ -3,7 +3,7 @@
 int main() {
     int a,b,result;
     char x;
-    float result1;
+
     scanf("%d %d %c",&a,&b,&x);
     if(x=='+'){
         result=a+b;
@@ -18,8 +18,8 @@ int main() {
         printf("%d",result);
     }
     else if(x=='/'){
-        result1=a/b;
-        printf("%d",(int) result1);
+        result=a/b;
+        printf("%d",result);
     }
     else{
         printf("error");
