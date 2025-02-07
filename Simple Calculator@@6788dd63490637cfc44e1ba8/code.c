@@ -18,6 +18,6 @@ int main() {
     else {
         result=a/b;
     }
- 
+    printf("%d",result);
     return 0;
 }
