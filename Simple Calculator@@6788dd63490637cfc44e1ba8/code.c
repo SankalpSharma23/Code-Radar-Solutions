@@ -18,8 +18,14 @@ int main() {
         printf("%d",result);
     }
     else if(x=='/'){
-        result=a/b;
+        if(b!=0){
+            result=a/b;
         printf("%d",result);
+        }
+        else{
+            printf("error");
+        }
+        
     }
     else{
         printf("error");
