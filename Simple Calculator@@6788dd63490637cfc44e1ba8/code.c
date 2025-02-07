@@ -7,10 +7,11 @@ int main() {
     scanf("%d %d %c",&a,&b,&x);
     if(x=='+'){
         result=a+b;
+        printf("%d",result);
     }
     else{
         printf("error");
     }
-    printf("%d",result);
+    
     return 0;
 }
