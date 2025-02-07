@@ -19,7 +19,7 @@ int main() {
     }
     else if(x=='/'){
         result1=a/b;
-        printf("%d",(int)result1);
+        printf("%d",(int) result1);
     }
     else{
         printf("error");
