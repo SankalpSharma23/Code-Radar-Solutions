@@ -3,9 +3,9 @@
 int main() {
     int a,b,result;
     char x;
-    scanf("%c",&x);
-    scanf("%d",&a);
-    scanf("%d",&b);
+
+    scanf("%d %d %c",&a,&b,&c);
+
     if(x='+'){
         result=a+b;
     }
