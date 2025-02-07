@@ -13,14 +13,6 @@ int main() {
         result=a-b;
         printf("%d",result);
     }
-    else if(x=='*'){
-        result=a*b;
-        printf("%d",result);
-    }
-    else if(x=='/'){
-        result=a/b;
-        printf("%d",result);
-    }
     else{
         printf("error");
     }
