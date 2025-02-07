@@ -15,7 +15,7 @@ int main() {
     else if(x='*'){
         result=a*b;
     }
-    else (x='/'){
+    else {
         result=a/b;
     }
  
