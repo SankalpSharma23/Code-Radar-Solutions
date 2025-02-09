@@ -6,13 +6,14 @@ int main() {
     for(int i=1;i<=a;i++){
         for(int j=1;j<=i;j++){
             printf("%d ",x);
-            if(x==1){
+            
+        }
+        if(x==1){
                 x-1;
             }
             else{
                 x+1;
             }
-        }
         printf("\n");
     }
     return 0;
