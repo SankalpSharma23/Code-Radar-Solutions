@@ -6,7 +6,7 @@ int main() {
      for (int i = a; i >= 1; i--) {
         // Print stars for the current row
         for (int j = 1; j <= i; j++) {
-            printf(" *");
+            printf("* ");
         }
         printf("\n");
     }
