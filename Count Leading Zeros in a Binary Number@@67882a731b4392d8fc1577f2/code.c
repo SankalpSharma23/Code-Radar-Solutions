@@ -5,11 +5,11 @@ int main() {
     scanf("%d", &n);
     
     if (n == 0) {
-        printf("-1\n"); // No set bit in 0
+        printf("-1\n"); 
         return 0;
     }
 
-    int position = __builtin_ctz(n)-1; // Finds the position of the lowest set bit
+    int position = __builtin_clz(n); // Finds the position of the lowest set bit
     printf("%d\n", position);
 
     return 0;
