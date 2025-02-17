@@ -1,14 +1,16 @@
 #include <stdio.h>
 
 int main() {
-    int a, b, c;
-    scanf("%d", &a);  // Fixed: Removed the extra space in scanf
+    int n;
+    scanf("%d", &n);
+    
+    if (n == 0) {
+        printf("-1\n"); // No set bit in 0
+        return 0;
+    }
 
-    b = sizeof(a) * 8;  // Get the number of bits in an int (usually 32)
+    int position = __builtin_ctz(n); // Finds the position of the lowest set bit
+    printf("%d\n", position);
 
-    // Shifting by 'b' is undefined, so we shift only up to 'b-1'
-    c = a << (b - 1);  
-
-    printf("%d\n", c);
     return 0;
 }
