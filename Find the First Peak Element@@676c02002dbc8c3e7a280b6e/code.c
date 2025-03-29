@@ -35,7 +35,7 @@ int main() {
     if (peakFound) {
         printf("%d\n", arr[peakIndex]);
     } else {
-        printf("No peak element found\n");
+        printf("-1");
     }
 
     return 0;
