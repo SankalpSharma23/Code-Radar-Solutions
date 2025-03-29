@@ -8,4 +8,5 @@ int mian(){
 
 }
 printf("%d",arr);
+return 0;
 }
