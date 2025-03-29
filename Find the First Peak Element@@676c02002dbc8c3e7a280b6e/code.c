@@ -8,15 +8,35 @@ int main() {
     for(int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);  
     }
-    int X=0,c;
-    for(int i=0;i<n;i++){
-        arr[i]>arr[i+1]&arr[i]>arr[i-1];
-        X=1;
-        c=i;
-        break;
+
+    int peakFound = 0;  // Flag to check if any peak exists
+    int peakIndex = -1; // Stores the index of a peak
+
+    for(int i = 0; i < n; i++) {
+        int isPeak = 1;  // Assume current element is a peak
+        
+        // Check left neighbor (skip if i=0)
+        if (i > 0 && arr[i] <= arr[i-1]) {
+            isPeak = 0;
+        }
+        
+        // Check right neighbor (skip if i=n-1)
+        if (i < n-1 && arr[i] <= arr[i+1]) {
+            isPeak = 0;
+        }
+
+        if (isPeak) {
+            peakFound = 1;
+            peakIndex = i;
+            break;  // Remove this to find all peaks
+        }
     }
-    if(X){
-        printf("%d",arr[c]);
+
+    if (peakFound) {
+        printf("%d\n", arr[peakIndex]);
+    } else {
+        printf("No peak element found\n");
     }
+
     return 0;
-    }
+}
