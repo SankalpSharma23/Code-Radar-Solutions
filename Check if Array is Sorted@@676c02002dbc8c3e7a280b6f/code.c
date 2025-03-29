@@ -9,7 +9,7 @@ int main(){
     int sorted= 0;
     for(int i=0;i<n;i++){
             if(arr[i]<arr[i+1]){
-                Sorted=1;
+                sorted=1;
                 break;
             }
         }
