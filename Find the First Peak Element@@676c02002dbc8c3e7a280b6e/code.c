@@ -10,7 +10,7 @@ int main() {
     }
     int X=0,c;
     for(int i=0;i<n;i++){
-        arr[i]<arr[i+1]&&arr[i-1];
+        arr[i]>arr[i+1]&&arr[i]>arr[i-1];
         X=1;
         c=i;
         break;
