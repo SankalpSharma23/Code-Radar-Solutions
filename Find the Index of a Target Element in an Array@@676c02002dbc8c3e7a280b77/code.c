@@ -1,13 +1,5 @@
 #include<stdio.h>
-int x(int arr[],size,target){
-    for(int i=0;i<=size;i++){
-        if(arr[i]==target){
-            return i;
-        }
-       
-    }
-     return -1
-}
+
 int main(){
 int size,target;
 scanf("%d",&size);
@@ -23,4 +15,14 @@ if(result!=-1){
 else{
     printf("-1")
 }
+return 0;
+}
+int x(int arr[],size,target){
+    for(int i=0;i<=size;i++){
+        if(arr[i]==target){
+            return i;
+        }
+       
+    }
+     return -1
 }
