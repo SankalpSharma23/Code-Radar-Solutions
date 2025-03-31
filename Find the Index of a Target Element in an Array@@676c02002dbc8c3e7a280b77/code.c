@@ -18,7 +18,7 @@ else{
 return 0;
 }
 int finder(int arr[],N,target){
-    for(int i=0;i<=size;i++){
+    for(int i=0;i<=N;i++){
         if(arr[i]==target){
             return i;
         }
