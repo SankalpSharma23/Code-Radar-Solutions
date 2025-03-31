@@ -8,7 +8,7 @@ for(int i=0;i<size;i++){
     scanf("%d",&arr[i]);
 }
 scanf("%d",target);
-int result =finder(arr,size,target)
+int result =finder(arr,size,target);
 if(result!=-1){
     printf("%d",result);
 }
