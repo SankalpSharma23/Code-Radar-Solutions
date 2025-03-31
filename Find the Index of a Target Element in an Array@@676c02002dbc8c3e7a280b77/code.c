@@ -13,7 +13,7 @@ if(result!=-1){
     printf("%d",result);
 }
 else{
-    printf("-1")
+    printf("-1");
 }
 return 0;
 }
