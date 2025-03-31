@@ -27,6 +27,6 @@ int main() {
         }
     }
 
-    printf("Most frequent number: %d (appears %d times)\n", most_frequent, max_count);
+    printf("%d ", max_count);
     return 0;
 }
