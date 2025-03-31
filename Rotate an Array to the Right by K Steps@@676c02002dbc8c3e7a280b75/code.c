@@ -17,7 +17,7 @@ int main(){
             arr1[i]=arr[i-b];
         }
         for(int i =0;i<a;i++){
-            printf ("%d\n",arr1[i]);
+            printf ("%d ",arr1[i]);
     }
     return 0;
 }
