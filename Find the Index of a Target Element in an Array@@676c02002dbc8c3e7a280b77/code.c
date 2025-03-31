@@ -24,5 +24,5 @@ int x(int arr[],size,target){
         }
        
     }
-     return -1
+     return -1;
 }
