@@ -12,7 +12,7 @@ int main() {
         first=arr[0];
         second=arr[1];
     }
-    for (int 2 = 0; i < N; i++) {
+    for (int i =2; i < N; i++) {
         if (arr[i] > first) {
             second = first;
             first = arr[i];
