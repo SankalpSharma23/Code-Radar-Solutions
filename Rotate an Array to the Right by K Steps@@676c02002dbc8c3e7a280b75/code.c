@@ -8,8 +8,8 @@ int main(){
         scanf("%d",&arr[i]);
     }
         int b ;
-        b =b%a;
         scanf("%d",&b);
+        b=b%a;
         for(int i=0;i<b;i++){
             arr1[i]=arr[a-b+i];
         }
