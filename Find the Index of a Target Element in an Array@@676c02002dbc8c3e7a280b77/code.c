@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 // Function declaration (consistent with definition)
-int find(int *arr, int N, int target);
 
 // Function definition (fixed parameter types)
 int find(int arr[], int N, int target) {
