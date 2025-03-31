@@ -7,8 +7,12 @@ int main() {
     for (int i = 0; i < N; i++) {
         scanf("%d", &arr[i]);  // Read the array elements
     }
-    int first = -1, second = -1;
-    for (int i = 0; i < N; i++) {
+    int first, second;
+    if(arr[0]>arr[1]){
+        first=arr[0];
+        second=arr[1];
+    }
+    for (int 2 = 0; i < N; i++) {
         if (arr[i] > first) {
             second = first;
             first = arr[i];
