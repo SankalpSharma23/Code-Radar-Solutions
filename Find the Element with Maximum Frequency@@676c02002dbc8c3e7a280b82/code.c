@@ -41,15 +41,13 @@ void largestFrequency(int arr[], int n) {
         max_element = current_element;
     }
 
-    printf("Element with largest frequency: %d (occurs %d times)\n", max_element, max_count);
+    printf(" %d %d ", max_element, max_count);
 }
 
 int main() {
     int n;
-    printf("Enter the number of elements: ");
     scanf("%d", &n);
     int arr[n];
-    printf("Enter the elements: ");
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
