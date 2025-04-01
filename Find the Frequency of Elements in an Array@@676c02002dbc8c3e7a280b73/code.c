@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-void largestFrequency(int arr[], int n) {
-    if (n == 0) {
-        printf("Array is empty\n");
+void frequency(int arr[], int n) {
+    if (n < 2) {
+        printf("1\n");
         return;
     }
 
@@ -17,21 +17,21 @@ void largestFrequency(int arr[], int n) {
         }
     }
 
-    int max_element = arr[0];
-    int max_count = 1;
-    int current_element = arr[0];
-    int current_count = 1;
+    // Count and print frequencies
+    int current = arr[0];
+    int count = 1;
 
     for (int i = 1; i < n; i++) {
-        if (arr[i] == current_element) {
-            current_count++;
+        if (arr[i] == current) {
+            count++;
         } else {
-            printf("%d %d\n",current_element,current_count);
-            current_element = arr[i];
-            current_count = 1;
+            printf("%d occurs %d times\n", current, count);
+            current = arr[i];
+            count = 1;
         }
     }
-    printf("%d %d", max_element,max_count);
+    // Print the last element's frequency
+    printf("%d occurs %d times\n", current, count);
 }
 
 int main() {
@@ -41,6 +41,6 @@ int main() {
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
-    largestFrequency(arr, n);
+    frequency(arr, n);
     return 0;
 }
