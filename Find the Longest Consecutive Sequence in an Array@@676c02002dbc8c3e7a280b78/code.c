@@ -3,7 +3,6 @@
 int cons(int arr[],int N){
     if(N==0)
     return 0;
-    sort(arr,N);
     int current =1, max =1;
     for(int i =1;i<N;i++){
         if(arr[i]!=arr[i+1]){
