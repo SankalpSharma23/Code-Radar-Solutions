@@ -25,7 +25,7 @@ void frequency(int arr[], int n) {
         if (arr[i] == current) {
             count++;
         } else {
-            printf("%d  %d\n", current, count);
+            printf("%d %d\n", current, count);
             current = arr[i];
             count = 1;
         }
