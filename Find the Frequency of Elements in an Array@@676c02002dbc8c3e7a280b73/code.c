@@ -35,11 +35,6 @@ void largestFrequency(int arr[], int n) {
         }
     }
 
-    // Check the last element's count
-    if (current_count > max_count) {
-        max_count = current_count;
-        max_element = current_element;
-    }
 
     printf("%d %d", max_element,max_count);
 }
