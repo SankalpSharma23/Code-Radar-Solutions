@@ -22,9 +22,9 @@ int main() {
         scanf("%d", &arr[i]);
     }
     if (isPalindrome(arr, 0, n - 1)) {
-        printf("Yes\n");
+        printf("YES\n");
     } else {
-        printf("No\n");
+        printf("NO\n");
     }
     return 0;
 }
