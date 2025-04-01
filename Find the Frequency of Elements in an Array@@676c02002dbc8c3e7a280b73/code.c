@@ -1,11 +1,6 @@
 #include <stdio.h>
 
 void frequency(int arr[], int n) {
-    if (n < 2) {
-        printf("1\n");
-        return;
-    }
-
     // Bubble sort to sort the array
     for (int i = 0; i < n - 1; i++) {
         for (int j = 0; j < n - i - 1; j++) {
