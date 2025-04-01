@@ -26,7 +26,7 @@ void largestFrequency(int arr[], int n) {
         if (arr[i] == current_element) {
             current_count++;
         } else {
-            printf("%d %d",current_element,current_count);
+            printf("%d %d\n",current_element,current_count);
             current_element = arr[i];
             current_count = 1;
         }
