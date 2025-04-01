@@ -31,7 +31,7 @@ void frequency(int arr[], int n) {
         }
     }
     // Print the last element's frequency
-    printf("%d occurs %d times\n", current, count);
+    printf("%d %d\n", current, count);
 }
 
 int main() {
