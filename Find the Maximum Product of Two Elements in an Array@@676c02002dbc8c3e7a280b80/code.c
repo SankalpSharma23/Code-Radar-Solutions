@@ -1,25 +1,53 @@
-#include <stdio.h>
-#include <limits.h> // For INT_MIN
 
-void findTwoMax(int arr[], int n) {
+#include <stdio.h>
+
+void product(int arr[], int n) {
     if (n < 2) {
-        printf("Array has less than 2 elements.\n");
+        printf("1\n");
         return;
     }
 
-    int firstMax = INT_MIN;
-    int secondMax = INT_MIN;
+    int max1 = arr[0], max2 = arr[1];
+    int min1 = arr[0], min2 = arr[1];
 
-    for (int i = 0; i < n; i++) {
-        if (arr[i] > firstMax) {
-            secondMax = firstMax;
-            firstMax = arr[i];
-        } else if (arr[i] > secondMax && arr[i] != firstMax) {
-            secondMax = arr[i];
+    // Initialize max1 and max2 correctly
+    if (max1 < max2) {
+        int temp = max1;
+        max1 = max2;
+        max2 = temp;
+    }
+
+    // Initialize min1 and min2 correctly
+    if (min1 > min2) {
+        int temp = min1;
+        min1 = min2;
+        min2 = temp;
+    }
+
+    for (int i = 2; i < n; i++) {
+        if (arr[i] > max1) {
+            max2 = max1;
+            max1 = arr[i];
+        } else if (arr[i] > max2) {
+            max2 = arr[i];
+        }
+
+        if (arr[i] < min1) {
+            min2 = min1;
+            min1 = arr[i];
+        } else if (arr[i] < min2) {
+            min2 = arr[i];
         }
     }
-    int result = firstMax*secondMax;
-    printf("%d",result);
+
+    int product1 = max1 * max2;
+    int product2 = min1 * min2;
+
+    if (product1 > product2) {
+        printf("%d\n", product1);
+    } else {
+        printf("%d\n", product2);
+    }
 }
 
 int main() {
@@ -29,6 +57,6 @@ int main() {
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
-    findTwoMax(arr, n);
+    product(arr, n);
     return 0;
 }
