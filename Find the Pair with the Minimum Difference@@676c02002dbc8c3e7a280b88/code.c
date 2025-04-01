@@ -1,7 +1,6 @@
-
 #include <stdio.h>
 #include <limits.h>
-#include <stdlib.h>
+
 void finder(int arr[], int n) {
     // Check if the array has less than 2 elements
     if (n < 2){
@@ -25,7 +24,7 @@ void finder(int arr[], int n) {
 
     // Find the pair with the smallest difference
     for (int i = 0; i < n - 1; i++) {
-        int diff = abs(arr[i + 1] - arr[i]);
+        int diff = (arr[i + 1] - arr[i]);
         if (diff < min) {
             min = diff;
             num1 = arr[i];
@@ -41,11 +40,16 @@ int main() {
     int n;
     scanf("%d", &n);
     int arr[n];
-    
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
+if(n<2){
+    printf("-1");
+}
+else{
+
 
     finder(arr, n);
+}
     return 0;
 }
