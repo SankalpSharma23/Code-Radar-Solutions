@@ -26,16 +26,11 @@ void largestFrequency(int arr[], int n) {
         if (arr[i] == current_element) {
             current_count++;
         } else {
-            if (current_count > max_count) {
-                max_count = current_count;
-                max_element = current_element;
-            }
+            printf("%d %d",current_element,current_count);
             current_element = arr[i];
             current_count = 1;
         }
     }
-
-
     printf("%d %d", max_element,max_count);
 }
 
