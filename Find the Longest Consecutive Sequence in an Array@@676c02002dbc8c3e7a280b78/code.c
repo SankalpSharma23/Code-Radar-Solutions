@@ -1,17 +1,5 @@
 
 #include <stdio.h>
-int temp;
-int sort(int arr[],int N){
-    for(int i =1;i<N;i++){
-        for(int j=1;j<N-i-1;j++){
-            if(arr[j]>arr[j+1]){
-                temp=arr[j];
-                arr[j]=arr[j+1];
-                arr[j+1]=temp;
-            }
-        }
-    }
-}
 int cons(int arr[],int N){
     if(N==0)
     return 0;
