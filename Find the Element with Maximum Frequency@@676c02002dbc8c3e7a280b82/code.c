@@ -41,7 +41,7 @@ void largestFrequency(int arr[], int n) {
         max_element = current_element;
     }
 
-    printf(" %d %d ", max_element, max_count);
+    printf("%d ", max_element);
 }
 
 int main() {
